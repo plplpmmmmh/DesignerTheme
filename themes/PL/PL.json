@@ -1,0 +1,74 @@
+{
+  "PresetView" : {
+    "frame" : {
+      "y" : "0",
+      "userInteractionEnabled" : "NO",
+      "x" : "0",
+      "width" : "screen_width",
+      "height" : "screen_height"
+    },
+    "dataInfo" : "(INFO ONLY THIS LINE CAN BE DELETED) Fonts: https:\/\/iosfontlist.com\/#availability=10.0&preinstalled",
+    "type" : "UIView",
+    "children" : {
+      "weather" : {
+        "frame" : {
+          "y" : "270",
+          "x" : "center",
+          "width" : "40",
+          "height" : "40"
+        },
+        "forecast" : "none",
+        "type" : "WeatherIcon",
+        "iconSet" : "pl"
+      },
+      "time" : {
+        "textStyle" : "capitalize",
+        "textAlignment" : "NSTextAlignmentCenter",
+        "frame" : {
+          "y" : "190",
+          "x" : "center",
+          "width" : "300",
+          "height" : "80"
+        },
+        "kerning" : "0",
+        "backgroundColor" : "rgba(255,255,255,0)",
+        "textColor" : "rgba(255, 255, 255, 0.3)",
+        "type" : "UILabel",
+        "numberOfLines" : "1",
+        "data" : "[minute]",
+        "fontSize" : "FH",
+        "fontName" : "Yikes_medium.otf",
+        "textShadow" : {
+          "y" : "3",
+          "radius" : "3",
+          "x" : "0",
+          "color" : "rgba(0, 0, 0, 0.1)"
+        }
+      },
+      "time_label" : {
+        "textAlignment" : "NSTextAlignmentCenter",
+        "frame" : {
+          "y" : "110",
+          "x" : "center",
+          "width" : "300",
+          "height" : "80"
+        },
+        "fontInfo" : "(INFO ONLY THIS LINE CAN BE DELETED) FH = Font size from height",
+        "backgroundColor" : "rgba(255,255,255,0)",
+        "kerning" : 4,
+        "textColor" : "rgba(255,255,255,1.0)",
+        "type" : "UILabel",
+        "numberOfLines" : "1",
+        "data" : "[paddedhour]",
+        "fontSize" : "FH",
+        "fontName" : "Yikes_medium.otf",
+        "textShadow" : {
+          "y" : 3,
+          "radius" : 3,
+          "x" : 0,
+          "color" : "rgba(0, 0, 0, 0.1)"
+        }
+      }
+    }
+  }
+}

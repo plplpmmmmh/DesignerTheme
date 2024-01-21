@@ -1,0 +1,231 @@
+{
+  "PresetView" : {
+    "frame" : {
+      "y" : "0",
+      "x" : "0",
+      "width" : "screen_width",
+      "height" : "screen_height",
+      "userInteractionEnabled" : "NO"
+    },
+    "order" : [
+      "time_label",
+      "hourview1",
+      "hourview2",
+      "hour2",
+      "minuesview1",
+      "minues1",
+      "minuesview2",
+      "minues2",
+      "data"
+    ],
+    "type" : "UIView",
+    "children" : {
+      "hourview2" : {
+        "rotate" : "0",
+        "backgroundColor" : "rgba(255, 255, 255, 0.0)",
+        "scale" : "0",
+        "frame" : {
+          "y" : "160",
+          "x" : "195",
+          "width" : "195",
+          "height" : "90"
+        },
+        "children" : {
+          "hour2" : {
+            "borderColor" : "rgba(255,255,255,1)",
+            "textStyle" : "none",
+            "textAlignment" : "NSTextAlignmentCenter",
+            "frame" : {
+              "y" : "0",
+              "x" : "-97",
+              "width" : "200",
+              "height" : "100"
+            },
+            "kerning" : "",
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "textColor" : "rgba(255, 255, 255, 0.6)",
+            "type" : "UILabel",
+            "numberOfLines" : "1",
+            "data" : "[paddedhour]",
+            "borderWidth" : "0",
+            "fontSize" : "70",
+            "fontName" : "Spaceboy Regular.ttf",
+            "textShadow" : {
+              "y" : "3",
+              "radius" : "3",
+              "x" : "0",
+              "color" : "rgba(0,0,0,0)"
+            }
+          }
+        },
+        "borderWidth" : "0",
+        "cornerRadius" : "5",
+        "borderColor" : "rgba(255,255,255,0)",
+        "type" : "UIView",
+        "blurColor" : "dark",
+        "blurAlpha" : "0"
+      },
+      "minuesview1" : {
+        "rotate" : "0",
+        "blurColor" : "dark",
+        "blurAlpha" : "0",
+        "frame" : {
+          "y" : "250",
+          "x" : "",
+          "width" : "195",
+          "height" : "90"
+        },
+        "children" : {
+          "minues1" : {
+            "borderColor" : "rgba(255,255,255,1)",
+            "textStyle" : "none",
+            "textAlignment" : "NSTextAlignmentCenter",
+            "frame" : {
+              "y" : "0",
+              "x" : "98",
+              "width" : "200",
+              "height" : "100"
+            },
+            "kerning" : "0",
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "textColor" : "rgba(255,255,255,0.6)",
+            "type" : "UILabel",
+            "numberOfLines" : "1",
+            "data" : "[minute]",
+            "borderWidth" : "0",
+            "fontSize" : "70",
+            "fontName" : "Spaceboy Regular.ttf",
+            "textShadow" : {
+              "y" : "3",
+              "color" : "rgba(0,0,0,0)",
+              "x" : "0",
+              "radius" : "3"
+            }
+          }
+        },
+        "borderWidth" : "0",
+        "cornerRadius" : "5",
+        "borderColor" : "rgba(255,255,255,0)",
+        "type" : "UIView",
+        "backgroundColor" : "rgba(255, 255, 255, 0.0)",
+        "scale" : "0"
+      },
+      "data" : {
+        "borderColor" : "rgba(255,255,255,1)",
+        "textStyle" : "none",
+        "textAlignment" : "NSTextAlignmentCenter",
+        "frame" : {
+          "y" : "340",
+          "x" : "center",
+          "width" : "150",
+          "height" : "40"
+        },
+        "kerning" : "0",
+        "backgroundColor" : "rgba(255,255,255,0)",
+        "textColor" : "rgba(255,255,255,0.7)",
+        "type" : "UILabel",
+        "numberOfLines" : "1",
+        "data" : "[shortday] \/ [date] [shortmonth]",
+        "borderWidth" : "0",
+        "fontSize" : "10",
+        "fontName" : "Spaceboy Regular.ttf",
+        "textShadow" : {
+          "y" : "3",
+          "color" : "rgba(0,0,0,0)",
+          "x" : "0",
+          "radius" : "3"
+        }
+      },
+      "hourview1" : {
+        "rotate" : "0",
+        "backgroundColor" : "rgba(245, 247, 255, 0.0)",
+        "scale" : "0",
+        "frame" : {
+          "y" : "160",
+          "x" : "",
+          "width" : "195",
+          "height" : "90"
+        },
+        "children" : {
+          "time_label" : {
+            "borderColor" : "rgba(255,255,255,1.0)",
+            "textAlignment" : "NSTextAlignmentCenter",
+            "frame" : {
+              "y" : "0",
+              "x" : "98",
+              "width" : "200",
+              "height" : "100"
+            },
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "kerning" : "",
+            "textColor" : "rgba(255,255,255,0.6)",
+            "type" : "UILabel",
+            "numberOfLines" : "1",
+            "data" : "[paddedhour]",
+            "borderWidth" : 0,
+            "fontSize" : "70",
+            "fontName" : "Spaceboy Regular.ttf",
+            "textShadow" : {
+              "y" : 3,
+              "color" : "rgba(0,0,0,0)",
+              "x" : 0,
+              "radius" : 3
+            },
+            "cornerRadius" : 0
+          }
+        },
+        "borderWidth" : "0",
+        "cornerRadius" : "5",
+        "borderColor" : "rgba(255,255,255,0)",
+        "type" : "UIView",
+        "blurColor" : "dark",
+        "blurAlpha" : "0"
+      },
+      "minuesview2" : {
+        "rotate" : "0",
+        "blurColor" : "dark",
+        "blurAlpha" : "0",
+        "frame" : {
+          "y" : "250",
+          "x" : "195",
+          "width" : "195",
+          "height" : "90"
+        },
+        "children" : {
+          "minues2" : {
+            "borderColor" : "rgba(255,255,255,1)",
+            "textStyle" : "none",
+            "textAlignment" : "NSTextAlignmentCenter",
+            "frame" : {
+              "y" : "0",
+              "x" : "-97",
+              "width" : "200",
+              "height" : "100"
+            },
+            "kerning" : "0",
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "textColor" : "rgba(255,255,255,0.6)",
+            "type" : "UILabel",
+            "numberOfLines" : "1",
+            "data" : "[minute]",
+            "borderWidth" : "0",
+            "fontSize" : "70",
+            "fontName" : "Spaceboy Regular.ttf",
+            "textShadow" : {
+              "y" : "3",
+              "radius" : "3",
+              "x" : "0",
+              "color" : "rgba(0,0,0,0)"
+            }
+          }
+        },
+        "borderWidth" : "0",
+        "cornerRadius" : "5",
+        "borderColor" : "rgba(255,255,255,0)",
+        "type" : "UIView",
+        "backgroundColor" : "rgba(255, 255, 255, 0.0)",
+        "scale" : "0"
+      }
+    }
+  }
+}
