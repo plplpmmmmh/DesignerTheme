@@ -8,89 +8,43 @@
       "height" : "screen_height"
     },
     "order" : [
-      "bat",
-      "date",
-      "mi",
-      "1",
-      ":",
-      "battery",
       "Music",
-      "weather"
+      "weather",
+      "时间",
+      "天气文字"
     ],
     "type" : "UIView",
     "children" : {
-      "1" : {
-        "scale" : "0",
-        "borderColor" : "rgba(255,255,255,0)",
-        "rotate" : "0",
-        "actions" : "none",
+      "时间" : {
+        "borderColor" : "rgba(255,255,255,1)",
+        "textStyle" : "none",
+        "textAlignment" : "NSTextAlignmentCenter",
         "frame" : {
-          "y" : "149",
+          "y" : "100",
           "x" : "center",
-          "width" : "6",
-          "height" : "20"
+          "width" : "screen_width",
+          "height" : "116"
         },
-        "backgroundColor" : "rgba(255, 255, 255, 0.50)",
-        "blurAlpha" : "0",
-        "type" : "UIView",
-        "animation" : "none",
-        "gradientImage" : "none",
+        "kerning" : "0",
+        "backgroundColor" : "rgba(255,255,255,0)",
+        "dataAttr" : "[minute]",
+        "textColor" : "rgba(255,255,255,1.0)",
+        "type" : "UILabel",
+        "fontColorAttr" : "rgba(255, 255, 255, 0.50)",
+        "numberOfLines" : "1",
+        "data" : "[paddedhour] ",
         "borderWidth" : "0",
-        "alpha" : "1",
-        "boxShadow" : {
+        "gradientImage" : "none",
+        "fontSizeAttr" : "50",
+        "fontSize" : "50",
+        "fontName" : "Yikes_medium.otf",
+        "textShadow" : {
           "y" : "3",
           "radius" : "3",
           "x" : "0",
           "color" : "rgba(0,0,0,0)"
         },
-        "cornerRadius" : "3",
-        "blurColor" : "dark"
-      },
-      ":" : {
-        "borderColor" : "rgba(255,255,255,1.0)",
-        "textAlignment" : "NSTextAlignmentRight",
-        "frame" : {
-          "y" : "118",
-          "x" : "-111",
-          "width" : "300",
-          "height" : "80"
-        },
-        "backgroundColor" : "rgba(255,255,255,0)",
-        "kerning" : 4,
-        "dataAttr" : "none",
-        "textColor" : "rgba(255,255,255,1.0)",
-        "type" : "UILabel",
-        "numberOfLines" : "1",
-        "data" : "[paddedhour]",
-        "borderWidth" : 0,
-        "gradientImage" : "none",
-        "fontSizeAttr" : "none",
-        "fontSize" : "41",
-        "fontName" : "MuseoModerno-SemiBold.ttf",
-        "textShadow" : {
-          "y" : 3,
-          "radius" : 3,
-          "x" : 0,
-          "color" : "rgba(0,0,0,0)"
-        },
-        "cornerRadius" : 0,
-        "fontNameAttr" : "none"
-      },
-      "battery" : {
-        "pauseImage" : "none",
-        "frame" : {
-          "y" : "184",
-          "x" : "244",
-          "width" : "22",
-          "height" : "22"
-        },
-        "isAlbumArt" : "0",
-        "contentMode" : "scaleAspectFit",
-        "animation" : "none",
-        "cornerRadius" : "0",
-        "imageURL" : "lightyellow.png",
-        "type" : "UIImageView",
-        "actions" : "none"
+        "fontNameAttr" : "Yikes_medium.otf"
       },
       "Music" : {
         "boxShadow" : {
@@ -130,15 +84,15 @@
             "blurIntensity" : "5",
             "alpha" : "1",
             "showWhenPlaying" : "NO",
+            "childorder" : "none",
             "boxShadow" : {
               "y" : "3",
               "radius" : "3",
               "x" : "0",
               "color" : "rgba(0,0,0,0)"
             },
-            "cornerRadius" : "11",
             "blurColor" : "dark2",
-            "childorder" : "none"
+            "cornerRadius" : "11"
           },
           "play" : {
             "pauseImage" : "Muses-pause.png",
@@ -284,15 +238,15 @@
         "animation" : "none",
         "blurColor" : "dark"
       },
-      "date" : {
+      "天气文字" : {
         "borderColor" : "rgba(255,255,255,1)",
         "textStyle" : "none",
         "textAlignment" : "NSTextAlignmentCenter",
         "frame" : {
-          "y" : "175",
-          "x" : "100",
-          "width" : "150",
-          "height" : "40"
+          "y" : "180",
+          "x" : "0",
+          "width" : "screen_width",
+          "height" : "45"
         },
         "kerning" : "0",
         "backgroundColor" : "rgba(255,255,255,0)",
@@ -301,48 +255,18 @@
         "type" : "UILabel",
         "fontColorAttr" : "none",
         "numberOfLines" : "1",
-        "data" : "[shortmonth] [date],[shortday]",
+        "data" : "[city] [temperature] ° [condition]",
         "borderWidth" : "0",
         "gradientImage" : "none",
         "fontSizeAttr" : "none",
         "fontSize" : "18",
-        "fontName" : "MuseoModerno-Medium.ttf",
+        "fontName" : "Yikes_medium.otf",
         "textShadow" : {
           "y" : "3",
           "radius" : "3",
           "x" : "0",
           "color" : "rgba(0,0,0,0)"
         },
-        "fontNameAttr" : "none"
-      },
-      "mi" : {
-        "borderColor" : "rgba(255,255,255,1.0)",
-        "textAlignment" : "NSTextAlignmentLeft",
-        "frame" : {
-          "y" : "118",
-          "x" : "204",
-          "width" : "300",
-          "height" : "80"
-        },
-        "backgroundColor" : "rgba(255,255,255,0)",
-        "kerning" : 4,
-        "dataAttr" : "none",
-        "textColor" : "rgba(255, 255, 255, 1.00)",
-        "type" : "UILabel",
-        "numberOfLines" : "1",
-        "data" : "[minute]",
-        "borderWidth" : 0,
-        "gradientImage" : "none",
-        "fontSizeAttr" : "none",
-        "fontSize" : "41",
-        "fontName" : "MuseoModerno-SemiBold.ttf",
-        "textShadow" : {
-          "y" : 3,
-          "radius" : 3,
-          "x" : 0,
-          "color" : "rgba(0,0,0,0)"
-        },
-        "cornerRadius" : 0,
         "fontNameAttr" : "none"
       },
       "weather" : {
@@ -355,37 +279,6 @@
         "forecast" : "none",
         "type" : "WeatherIcon",
         "iconSet" : "pl"
-      },
-      "bat" : {
-        "borderColor" : "rgba(255,255,255,1)",
-        "textStyle" : "none",
-        "textAlignment" : "NSTextAlignmentRight",
-        "frame" : {
-          "y" : "175",
-          "x" : "97",
-          "width" : "150",
-          "height" : "40"
-        },
-        "kerning" : "0",
-        "backgroundColor" : "rgba(255,255,255,0)",
-        "dataAttr" : "none",
-        "textColor" : "rgba(255, 255, 255, 0.60)",
-        "type" : "UILabel",
-        "fontColorAttr" : "none",
-        "numberOfLines" : "1",
-        "data" : "[batterypercent]",
-        "borderWidth" : "0",
-        "gradientImage" : "none",
-        "fontSizeAttr" : "none",
-        "fontSize" : "18",
-        "fontName" : "MuseoModerno-Medium.ttf",
-        "textShadow" : {
-          "y" : "3",
-          "radius" : "3",
-          "x" : "0",
-          "color" : "rgba(0,0,0,0)"
-        },
-        "fontNameAttr" : "none"
       }
     }
   }
