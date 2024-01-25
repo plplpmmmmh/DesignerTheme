@@ -2,10 +2,10 @@
   "PresetView" : {
     "frame" : {
       "y" : "0",
-      "height" : "screen_height",
-      "userInteractionEnabled" : "NO",
       "x" : "0",
-      "width" : "screen_width"
+      "width" : "screen_width",
+      "height" : "screen_height",
+      "userInteractionEnabled" : "NO"
     },
     "order" : [
       "Music",
@@ -32,8 +32,24 @@
         "backgroundColor" : "rgba(255,255,255,0.3)",
         "showWhenPlaying" : "YES",
         "children" : {
+          "进度条" : {
+            "ringBackground" : "YES",
+            "alpha" : "1",
+            "ringWidth" : "2",
+            "frame" : {
+              "y" : "81",
+              "x" : "131",
+              "width" : "48",
+              "height" : "48"
+            },
+            "ringColor" : "rgba(155,153,154,1)",
+            "ringBackgroundColor" : "rgba(155,153,154,0.3)",
+            "ringCap" : "round",
+            "type" : "CircleProgress",
+            "ringValue" : "musicElapsedValue"
+          },
           "blur" : {
-            "cornerRadius" : "11",
+            "blurColor" : "dark2",
             "borderColor" : "rgba(255,255,255,0)",
             "scale" : "0",
             "rotate" : "0",
@@ -54,13 +70,13 @@
             "alpha" : "1",
             "showWhenPlaying" : "NO",
             "childorder" : "none",
+            "cornerRadius" : "11",
             "boxShadow" : {
               "y" : "3",
               "color" : "rgba(0,0,0,0)",
               "x" : "0",
               "radius" : "3"
             },
-            "blurColor" : "dark2",
             "userInteraction" : "YES"
           },
           "play" : {
@@ -175,6 +191,37 @@
             "animation" : "none",
             "blurColor" : "dark"
           },
+          "音乐时间" : {
+            "borderColor" : "rgba(255,255,255,1)",
+            "textStyle" : "none",
+            "textAlignment" : "NSTextAlignmentLeft",
+            "frame" : {
+              "y" : "165",
+              "x" : "10",
+              "width" : "76",
+              "height" : "45"
+            },
+            "kerning" : "0",
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "dataAttr" : "none",
+            "textColor" : "rgba(255,255,255,1.0)",
+            "type" : "UILabel",
+            "fontColorAttr" : "none",
+            "numberOfLines" : "1",
+            "data" : "[musicElapsed]",
+            "borderWidth" : "0",
+            "gradientImage" : "none",
+            "fontSizeAttr" : "none",
+            "fontSize" : "30",
+            "fontName" : "Yikes_medium.otf",
+            "textShadow" : {
+              "y" : "3",
+              "color" : "rgba(0,0,0,0)",
+              "x" : "0",
+              "radius" : "3"
+            },
+            "fontNameAttr" : "none"
+          },
           "albumart" : {
             "pauseImage" : "none",
             "frame" : {
@@ -195,10 +242,10 @@
         "blurAlpha" : "0",
         "cornerRadius" : "12",
         "type" : "UIView",
-        "childorder" : "play,歌词,blur,albumart",
+        "childorder" : "音乐时间,进度条,play,歌词,blur,albumart",
         "rotate" : "0",
         "blurIntensity" : "10",
-        "alpha" : "0",
+        "alpha" : "01",
         "scale" : "0",
         "gradientImage" : "none",
         "borderColor" : "rgba(255,255,255,0)",

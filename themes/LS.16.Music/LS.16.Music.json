@@ -2,10 +2,10 @@
   "PresetView" : {
     "frame" : {
       "y" : "0",
+      "height" : "screen_height",
       "userInteractionEnabled" : "NO",
       "x" : "0",
-      "width" : "screen_width",
-      "height" : "screen_height"
+      "width" : "screen_width"
     },
     "order" : [
       "模糊背景整体",
@@ -41,18 +41,18 @@
         "fontName" : "whitney-semibold.otf",
         "textShadow" : {
           "y" : "3",
-          "radius" : "3",
+          "color" : "rgba(0,0,0,0)",
           "x" : "0",
-          "color" : "rgba(0,0,0,0)"
+          "radius" : "3"
         },
         "fontNameAttr" : "none"
       },
       "模糊背景整体" : {
         "boxShadow" : {
           "y" : "3",
-          "radius" : "3",
+          "color" : "rgba(0,0,0,0)",
           "x" : "0",
-          "color" : "rgba(0,0,0,0)"
+          "radius" : "3"
         },
         "frame" : {
           "y" : "center",
@@ -65,7 +65,7 @@
         "showWhenPlaying" : "YES",
         "children" : {
           "模糊" : {
-            "userInteraction" : "YES",
+            "cornerRadius" : "5",
             "borderColor" : "rgba(255,255,255,0)",
             "scale" : "0",
             "rotate" : "0",
@@ -88,12 +88,12 @@
             "childorder" : "none",
             "boxShadow" : {
               "y" : "3",
-              "radius" : "3",
+              "color" : "rgba(0,0,0,0)",
               "x" : "0",
-              "color" : "rgba(0,0,0,0)"
+              "radius" : "3"
             },
             "blurColor" : "dark2",
-            "cornerRadius" : "5"
+            "userInteraction" : "YES"
           },
           "专辑模糊" : {
             "pauseImage" : "none",
@@ -131,9 +131,9 @@
       "专辑框架" : {
         "boxShadow" : {
           "y" : "3",
-          "radius" : "3",
+          "color" : "rgba(0,0,0,0)",
           "x" : "0",
-          "color" : "rgba(0,0,0,0)"
+          "radius" : "3"
         },
         "frame" : {
           "y" : "225",
@@ -181,9 +181,9 @@
       "音乐框架" : {
         "boxShadow" : {
           "y" : "3",
-          "radius" : "3",
+          "color" : "rgba(0,0,0,0)",
           "x" : "0",
-          "color" : "rgba(0,0,0,0)"
+          "radius" : "3"
         },
         "frame" : {
           "y" : "581",
@@ -220,9 +220,9 @@
             "fontName" : "HelveticaNeue-Bold",
             "textShadow" : {
               "y" : "3",
-              "radius" : "3",
+              "color" : "rgba(0,0,0,0)",
               "x" : "0",
-              "color" : "rgba(0,0,0,0)"
+              "radius" : "3"
             },
             "fontNameAttr" : "none"
           },
@@ -247,13 +247,13 @@
             "borderWidth" : "0",
             "gradientImage" : "none",
             "fontSizeAttr" : "none",
-            "fontSize" : "18",
+            "fontSize" : "16",
             "fontName" : "PingFangHK-Semibold",
             "textShadow" : {
               "y" : "3",
-              "radius" : "3",
+              "color" : "rgba(0,0,0,0)",
               "x" : "0",
-              "color" : "rgba(0,0,0,0)"
+              "radius" : "3"
             },
             "fontNameAttr" : "none"
           },
@@ -292,7 +292,7 @@
             "imageFolder" : "none"
           },
           "上一首按钮" : {
-            "cornerRadius" : "5",
+            "userInteraction" : "YES",
             "borderColor" : "rgba(255,255,255,0)",
             "scale" : "0",
             "rotate" : "0",
@@ -313,17 +313,17 @@
             "alpha" : "1",
             "showWhenPlaying" : "NO",
             "childorder" : "none",
+            "cornerRadius" : "5",
             "boxShadow" : {
               "y" : "3",
-              "radius" : "3",
+              "color" : "rgba(0,0,0,0)",
               "x" : "0",
-              "color" : "rgba(0,0,0,0)"
+              "radius" : "3"
             },
-            "blurColor" : "dark",
-            "userInteraction" : "YES"
+            "blurColor" : "dark"
           },
           "播放按钮" : {
-            "cornerRadius" : "5",
+            "userInteraction" : "YES",
             "borderColor" : "rgba(255,255,255,0)",
             "scale" : "0",
             "rotate" : "0",
@@ -344,14 +344,14 @@
             "alpha" : "1",
             "showWhenPlaying" : "NO",
             "childorder" : "none",
+            "cornerRadius" : "5",
             "boxShadow" : {
               "y" : "3",
-              "radius" : "3",
+              "color" : "rgba(0,0,0,0)",
               "x" : "0",
-              "color" : "rgba(0,0,0,0)"
+              "radius" : "3"
             },
-            "blurColor" : "dark",
-            "userInteraction" : "YES"
+            "blurColor" : "dark"
           },
           "下一首" : {
             "pauseImage" : "none",
@@ -408,9 +408,9 @@
             "fontName" : "HelveticaNeue-Bold",
             "textShadow" : {
               "y" : "3",
-              "radius" : "3",
+              "color" : "rgba(0,0,0,0)",
               "x" : "0",
-              "color" : "rgba(0,0,0,0)"
+              "radius" : "3"
             },
             "fontNameAttr" : "none"
           },
@@ -435,18 +435,18 @@
             "borderWidth" : "0",
             "gradientImage" : "none",
             "fontSizeAttr" : "none",
-            "fontSize" : "15",
+            "fontSize" : "14",
             "fontName" : "HelveticaNeue-Bold",
             "textShadow" : {
               "y" : "3",
-              "radius" : "3",
+              "color" : "rgba(0,0,0,0)",
               "x" : "0",
-              "color" : "rgba(0,0,0,0)"
+              "radius" : "3"
             },
             "fontNameAttr" : "none"
           },
           "下一首按钮" : {
-            "cornerRadius" : "5",
+            "userInteraction" : "YES",
             "borderColor" : "rgba(255,255,255,0)",
             "scale" : "0",
             "rotate" : "0",
@@ -467,14 +467,14 @@
             "alpha" : "1",
             "showWhenPlaying" : "NO",
             "childorder" : "none",
+            "cornerRadius" : "5",
             "boxShadow" : {
               "y" : "3",
-              "radius" : "3",
+              "color" : "rgba(0,0,0,0)",
               "x" : "0",
-              "color" : "rgba(0,0,0,0)"
+              "radius" : "3"
             },
-            "blurColor" : "dark",
-            "userInteraction" : "YES"
+            "blurColor" : "dark"
           }
         },
         "blurAlpha" : "1",
@@ -517,9 +517,9 @@
         "fontName" : "whitney-medium.otf",
         "textShadow" : {
           "y" : "3",
-          "radius" : "3",
+          "color" : "rgba(0,0,0,0)",
           "x" : "0",
-          "color" : "rgba(0,0,0,0)"
+          "radius" : "3"
         },
         "fontNameAttr" : "none"
       }
