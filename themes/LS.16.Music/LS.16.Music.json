@@ -85,15 +85,15 @@
             "blurIntensity" : "50",
             "alpha" : "1",
             "showWhenPlaying" : "NO",
+            "childorder" : "none",
             "boxShadow" : {
               "y" : "3",
               "radius" : "3",
               "x" : "0",
               "color" : "rgba(0,0,0,0)"
             },
-            "cornerRadius" : "5",
             "blurColor" : "dark2",
-            "childorder" : "none"
+            "cornerRadius" : "5"
           },
           "专辑模糊" : {
             "pauseImage" : "none",
@@ -186,21 +186,52 @@
           "color" : "rgba(0,0,0,0)"
         },
         "frame" : {
-          "y" : "585",
+          "y" : "581",
           "x" : "center",
           "width" : "370",
-          "height" : "120"
+          "height" : "143"
         },
         "borderWidth" : "0",
-        "backgroundColor" : "rgba(255,255,255,0.3)",
+        "backgroundColor" : "rgba(255,255,255,0)",
         "showWhenPlaying" : "YES",
         "children" : {
+          "结束时间" : {
+            "borderColor" : "rgba(255,255,255,1)",
+            "textStyle" : "capitalize",
+            "textAlignment" : "NSTextAlignmentCenter",
+            "frame" : {
+              "y" : "45",
+              "x" : "307",
+              "width" : "63",
+              "height" : "40"
+            },
+            "kerning" : "0",
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "dataAttr" : "none",
+            "textColor" : "rgba(255,255,255,0.5)",
+            "type" : "UILabel",
+            "fontColorAttr" : "none",
+            "numberOfLines" : "1",
+            "data" : "[musicDuration]",
+            "borderWidth" : "0",
+            "gradientImage" : "none",
+            "fontSizeAttr" : "none",
+            "fontSize" : "13",
+            "fontName" : "HelveticaNeue-Bold",
+            "textShadow" : {
+              "y" : "3",
+              "radius" : "3",
+              "x" : "0",
+              "color" : "rgba(0,0,0,0)"
+            },
+            "fontNameAttr" : "none"
+          },
           "歌手" : {
             "borderColor" : "rgba(255,255,255,1)",
             "textStyle" : "capitalize",
             "textAlignment" : "NSTextAlignmentCenter",
             "frame" : {
-              "y" : "4",
+              "y" : "3",
               "x" : "center",
               "width" : "260",
               "height" : "40"
@@ -216,7 +247,7 @@
             "borderWidth" : "0",
             "gradientImage" : "none",
             "fontSizeAttr" : "none",
-            "fontSize" : "20",
+            "fontSize" : "18",
             "fontName" : "PingFangHK-Semibold",
             "textShadow" : {
               "y" : "3",
@@ -229,7 +260,7 @@
           "播放" : {
             "pauseImage" : "pause.png",
             "frame" : {
-              "y" : "74",
+              "y" : "92",
               "x" : "center",
               "width" : "30",
               "height" : "30"
@@ -246,7 +277,7 @@
           "上一首" : {
             "pauseImage" : "none",
             "frame" : {
-              "y" : "76",
+              "y" : "94",
               "x" : "100",
               "width" : "34",
               "height" : "27"
@@ -261,13 +292,13 @@
             "imageFolder" : "none"
           },
           "上一首按钮" : {
-            "userInteraction" : "YES",
+            "cornerRadius" : "5",
             "borderColor" : "rgba(255,255,255,0)",
             "scale" : "0",
             "rotate" : "0",
             "actions" : "prevTrack",
             "frame" : {
-              "y" : "63",
+              "y" : "82",
               "x" : "90",
               "width" : "50",
               "height" : "50"
@@ -281,24 +312,24 @@
             "blurIntensity" : "10",
             "alpha" : "1",
             "showWhenPlaying" : "NO",
+            "childorder" : "none",
             "boxShadow" : {
               "y" : "3",
               "radius" : "3",
               "x" : "0",
               "color" : "rgba(0,0,0,0)"
             },
-            "cornerRadius" : "5",
             "blurColor" : "dark",
-            "childorder" : "none"
+            "userInteraction" : "YES"
           },
           "播放按钮" : {
-            "userInteraction" : "YES",
+            "cornerRadius" : "5",
             "borderColor" : "rgba(255,255,255,0)",
             "scale" : "0",
             "rotate" : "0",
             "actions" : "playMusic",
             "frame" : {
-              "y" : "63",
+              "y" : "81",
               "x" : "center",
               "width" : "50",
               "height" : "50"
@@ -312,20 +343,20 @@
             "blurIntensity" : "10",
             "alpha" : "1",
             "showWhenPlaying" : "NO",
+            "childorder" : "none",
             "boxShadow" : {
               "y" : "3",
               "radius" : "3",
               "x" : "0",
               "color" : "rgba(0,0,0,0)"
             },
-            "cornerRadius" : "5",
             "blurColor" : "dark",
-            "childorder" : "none"
+            "userInteraction" : "YES"
           },
           "下一首" : {
             "pauseImage" : "none",
             "frame" : {
-              "y" : "75",
+              "y" : "94",
               "x" : "240",
               "width" : "27",
               "height" : "27"
@@ -339,12 +370,56 @@
             "actions" : "none",
             "imageFolder" : "none"
           },
+          "进度条" : {
+            "gradientImage" : "none",
+            "frame" : {
+              "y" : "63",
+              "x" : "center",
+              "width" : "255",
+              "height" : "7"
+            },
+            "backColor" : "rgba(255, 255, 255, 0.20)",
+            "type" : "ElapsedBar",
+            "innerColor" : "rgba(255,255,255,1.0)",
+            "radius" : "3"
+          },
+          "起始时间" : {
+            "borderColor" : "rgba(255,255,255,1)",
+            "textStyle" : "capitalize",
+            "textAlignment" : "NSTextAlignmentCenter",
+            "frame" : {
+              "y" : "45",
+              "x" : "0",
+              "width" : "63",
+              "height" : "40"
+            },
+            "kerning" : "0",
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "dataAttr" : "none",
+            "textColor" : "rgba(255,255,255,0.5)",
+            "type" : "UILabel",
+            "fontColorAttr" : "none",
+            "numberOfLines" : "1",
+            "data" : "[musicElapsed]",
+            "borderWidth" : "0",
+            "gradientImage" : "none",
+            "fontSizeAttr" : "none",
+            "fontSize" : "13",
+            "fontName" : "HelveticaNeue-Bold",
+            "textShadow" : {
+              "y" : "3",
+              "radius" : "3",
+              "x" : "0",
+              "color" : "rgba(0,0,0,0)"
+            },
+            "fontNameAttr" : "none"
+          },
           "歌曲名" : {
             "borderColor" : "rgba(255,255,255,1)",
             "textStyle" : "capitalize",
             "textAlignment" : "NSTextAlignmentCenter",
             "frame" : {
-              "y" : "32",
+              "y" : "24",
               "x" : "center",
               "width" : "260",
               "height" : "40"
@@ -371,13 +446,13 @@
             "fontNameAttr" : "none"
           },
           "下一首按钮" : {
-            "userInteraction" : "YES",
+            "cornerRadius" : "5",
             "borderColor" : "rgba(255,255,255,0)",
             "scale" : "0",
             "rotate" : "0",
             "actions" : "nextTrack",
             "frame" : {
-              "y" : "63",
+              "y" : "83",
               "x" : "230",
               "width" : "50",
               "height" : "50"
@@ -391,21 +466,21 @@
             "blurIntensity" : "10",
             "alpha" : "1",
             "showWhenPlaying" : "NO",
+            "childorder" : "none",
             "boxShadow" : {
               "y" : "3",
               "radius" : "3",
               "x" : "0",
               "color" : "rgba(0,0,0,0)"
             },
-            "cornerRadius" : "5",
             "blurColor" : "dark",
-            "childorder" : "none"
+            "userInteraction" : "YES"
           }
         },
         "blurAlpha" : "1",
         "cornerRadius" : "25",
         "type" : "UIView",
-        "childorder" : "歌曲名,歌手,播放,下一首,上一首,播放按钮,下一首按钮,上一首按钮",
+        "childorder" : "歌曲名,歌手,播放,下一首,上一首,播放按钮,下一首按钮,上一首按钮,进度条,起始时间,结束时间",
         "rotate" : "0",
         "blurIntensity" : "15",
         "alpha" : "1",
@@ -438,7 +513,7 @@
         "borderWidth" : "0",
         "gradientImage" : "none",
         "fontSizeAttr" : "none",
-        "fontSize" : "26",
+        "fontSize" : "24",
         "fontName" : "whitney-medium.otf",
         "textShadow" : {
           "y" : "3",
