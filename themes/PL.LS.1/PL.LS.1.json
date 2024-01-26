@@ -3,132 +3,165 @@
     "type" : "UIView",
     "frame" : {
       "y" : "0",
+      "width" : "screen_width",
       "height" : "screen_height",
       "userInteractionEnabled" : "NO",
-      "x" : "0",
-      "width" : "screen_width"
+      "x" : "0"
     },
     "children" : {
-      "time_label" : {
-        "borderColor" : "rgba(255,255,255,0)",
-        "textAlignment" : "NSTextAlignmentCenter",
-        "frame" : {
-          "y" : "380",
-          "x" : "46",
-          "width" : "300",
-          "height" : "80"
+      "all" : {
+        "boxShadow" : {
+          "y" : "3",
+          "radius" : "3",
+          "x" : "0",
+          "color" : "rgba(0,0,0,0)"
         },
-        "backgroundColor" : "rgba(255,255,255,0)",
-        "kerning" : "2",
-        "dataAttr" : "none",
-        "textColor" : "rgba(255, 255, 255, 0.5)",
-        "type" : "UILabel",
-        "numberOfLines" : "",
-        "data" : "x",
-        "borderWidth" : "0",
-        "gradientImage" : "",
-        "fontSizeAttr" : "none",
-        "fontSize" : "40",
-        "fontName" : "FZCYJ.otf",
-        "textShadow" : {
-          "y" : 3,
-          "color" : "rgba(0,0,0,0)",
-          "x" : 0,
-          "radius" : 3
-        },
-        "cornerRadius" : 0,
-        "fontNameAttr" : "none"
-      },
-      "cha" : {
-        "borderColor" : "rgba(255,255,255,1)",
-        "textStyle" : "none",
-        "textAlignment" : "NSTextAlignmentCenter",
         "frame" : {
-          "y" : "441",
+          "y" : "center",
           "x" : "center",
           "width" : "screen_width",
-          "height" : "40"
+          "height" : "200"
         },
-        "kerning" : "0",
-        "backgroundColor" : "rgba(255,255,255,0)",
-        "dataAttr" : "none",
-        "textColor" : "rgba(255,255,255,0.4)",
-        "type" : "UILabel",
-        "fontColorAttr" : "none",
-        "numberOfLines" : "1",
-        "data" : "[batterypercent]% [ischarging]",
         "borderWidth" : "0",
+        "backgroundColor" : "rgba(255,255,255,0)",
+        "showWhenPlaying" : "NO",
+        "children" : {
+          "cha" : {
+            "borderColor" : "rgba(255,255,255,1)",
+            "textStyle" : "none",
+            "textAlignment" : "NSTextAlignmentCenter",
+            "frame" : {
+              "y" : "110",
+              "x" : "center",
+              "width" : "screen_width",
+              "height" : "40"
+            },
+            "kerning" : "0",
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "dataAttr" : "none",
+            "textColor" : "rgba(255,255,255,0.4)",
+            "type" : "UILabel",
+            "fontColorAttr" : "none",
+            "numberOfLines" : "1",
+            "data" : "[batterypercent]% [ischarging]",
+            "borderWidth" : "0",
+            "gradientImage" : "none",
+            "fontSizeAttr" : "none",
+            "fontSize" : "12",
+            "fontName" : "Quicksand-Bold.otf",
+            "textShadow" : {
+              "y" : "3",
+              "radius" : "3",
+              "x" : "0",
+              "color" : "rgba(0,0,0,0)"
+            },
+            "fontNameAttr" : "none"
+          },
+          "time_label" : {
+            "borderColor" : "rgba(255,255,255,0)",
+            "textAlignment" : "NSTextAlignmentCenter",
+            "frame" : {
+              "y" : "-2",
+              "x" : "0",
+              "width" : "view_width",
+              "height" : "view_height"
+            },
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "kerning" : "2",
+            "dataAttr" : "none",
+            "textColor" : "rgba(255, 255, 255, 0)",
+            "type" : "UILabel",
+            "numberOfLines" : "",
+            "data" : "x",
+            "borderWidth" : "0",
+            "gradientImage" : "",
+            "fontSizeAttr" : "none",
+            "fontSize" : "40",
+            "fontName" : "FZCYJ.otf",
+            "textShadow" : {
+              "y" : 3,
+              "radius" : 3,
+              "x" : 0,
+              "color" : "rgba(0,0,0,0)"
+            },
+            "cornerRadius" : 0,
+            "fontNameAttr" : "none"
+          },
+          "minu" : {
+            "borderColor" : "rgba(255,255,255,0)",
+            "textAlignment" : "NSTextAlignmentLeft",
+            "frame" : {
+              "y" : "center",
+              "x" : "math(screen_width\/2+10)",
+              "width" : "math(screen_width\/2)",
+              "height" : "80"
+            },
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "kerning" : "2",
+            "dataAttr" : "none",
+            "textColor" : "rgba(255, 255, 255, 0.8)",
+            "type" : "UILabel",
+            "numberOfLines" : "",
+            "data" : "[minute]",
+            "borderWidth" : "0",
+            "gradientImage" : "",
+            "fontSizeAttr" : "none",
+            "fontSize" : "50",
+            "fontName" : "FZCYJ.otf",
+            "textShadow" : {
+              "y" : 3,
+              "radius" : 3,
+              "x" : 0,
+              "color" : "rgba(0,0,0,0)"
+            },
+            "cornerRadius" : 0,
+            "fontNameAttr" : "none"
+          },
+          "hour" : {
+            "borderColor" : "rgba(255,255,255,0)",
+            "textAlignment" : "NSTextAlignmentRight",
+            "frame" : {
+              "y" : "center",
+              "x" : "math(screen_width*0-10)",
+              "width" : "math(screen_width\/2)",
+              "height" : "80"
+            },
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "kerning" : "2",
+            "dataAttr" : "none",
+            "textColor" : "rgba(255, 255, 255, 0.8)",
+            "type" : "UILabel",
+            "numberOfLines" : "",
+            "data" : "[paddedhour]",
+            "borderWidth" : "0",
+            "gradientImage" : "",
+            "fontSizeAttr" : "none",
+            "fontSize" : "50",
+            "fontName" : "FZCYJ.otf",
+            "textShadow" : {
+              "y" : 3,
+              "radius" : 3,
+              "x" : 0,
+              "color" : "rgba(0,0,0,0)"
+            },
+            "cornerRadius" : 0,
+            "fontNameAttr" : "none"
+          }
+        },
+        "blurAlpha" : "0",
+        "cornerRadius" : "5",
+        "type" : "UIView",
+        "childorder" : "hour,time_label,minu,cha",
+        "rotate" : "0",
+        "blurIntensity" : "10",
+        "alpha" : "1",
+        "scale" : "0",
         "gradientImage" : "none",
-        "fontSizeAttr" : "none",
-        "fontSize" : "12",
-        "fontName" : "Quicksand-Bold.otf",
-        "textShadow" : {
-          "y" : "3",
-          "color" : "rgba(0,0,0,0)",
-          "x" : "0",
-          "radius" : "3"
-        },
-        "fontNameAttr" : "none"
-      },
-      "minu" : {
         "borderColor" : "rgba(255,255,255,0)",
-        "textAlignment" : "NSTextAlignmentLeft",
-        "frame" : {
-          "y" : "center",
-          "x" : "207",
-          "width" : "181",
-          "height" : "80"
-        },
-        "backgroundColor" : "rgba(255,255,255,0)",
-        "kerning" : "2",
-        "dataAttr" : "none",
-        "textColor" : "rgba(255, 255, 255, 0.8)",
-        "type" : "UILabel",
-        "numberOfLines" : "",
-        "data" : "[minute]",
-        "borderWidth" : "0",
-        "gradientImage" : "",
-        "fontSizeAttr" : "none",
-        "fontSize" : "50",
-        "fontName" : "FZCYJ.otf",
-        "textShadow" : {
-          "y" : 3,
-          "color" : "rgba(0,0,0,0)",
-          "x" : 0,
-          "radius" : 3
-        },
-        "cornerRadius" : 0,
-        "fontNameAttr" : "none"
-      },
-      "hour" : {
-        "borderColor" : "rgba(255,255,255,0)",
-        "textAlignment" : "NSTextAlignmentRight",
-        "frame" : {
-          "y" : "center",
-          "x" : "0",
-          "width" : "185",
-          "height" : "80"
-        },
-        "backgroundColor" : "rgba(255,255,255,0)",
-        "kerning" : "2",
-        "dataAttr" : "none",
-        "textColor" : "rgba(255, 255, 255, 0.8)",
-        "type" : "UILabel",
-        "numberOfLines" : "",
-        "data" : "[paddedhour]",
-        "borderWidth" : "0",
-        "gradientImage" : "",
-        "fontSizeAttr" : "none",
-        "fontSize" : "50",
-        "fontName" : "FZCYJ.otf",
-        "textShadow" : {
-          "y" : 3,
-          "color" : "rgba(0,0,0,0)",
-          "x" : 0,
-          "radius" : 3
-        },
-        "cornerRadius" : 0,
-        "fontNameAttr" : "none"
+        "userInteraction" : "YES",
+        "actions" : "none",
+        "animation" : "none",
+        "blurColor" : "dark"
       }
     }
   }
