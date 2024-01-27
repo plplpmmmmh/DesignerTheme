@@ -2,10 +2,10 @@
   "PresetView" : {
     "frame" : {
       "y" : "0",
+      "height" : "screen_height",
       "userInteractionEnabled" : "NO",
       "x" : "0",
-      "width" : "screen_width",
-      "height" : "screen_height"
+      "width" : "screen_width"
     },
     "order" : [
       "Music",
@@ -18,9 +18,9 @@
       "Music" : {
         "boxShadow" : {
           "y" : "3",
-          "color" : "rgba(0,0,0,0)",
+          "radius" : "3",
           "x" : "0",
-          "radius" : "3"
+          "color" : "rgba(0,0,0,0)"
         },
         "frame" : {
           "y" : "287",
@@ -49,7 +49,12 @@
             "actions" : "none"
           },
           "blur" : {
-            "userInteraction" : "YES",
+            "boxShadow" : {
+              "y" : "3",
+              "color" : "rgba(0,0,0,0)",
+              "x" : "0",
+              "radius" : "3"
+            },
             "borderColor" : "rgba(255,255,255,0)",
             "scale" : "0",
             "rotate" : "0",
@@ -72,12 +77,7 @@
             "childorder" : "none",
             "cornerRadius" : "11",
             "blurColor" : "dark2",
-            "boxShadow" : {
-              "y" : "3",
-              "radius" : "3",
-              "x" : "0",
-              "color" : "rgba(0,0,0,0)"
-            }
+            "userInteraction" : "YES"
           },
           "play" : {
             "pauseImage" : "Muses-pause.png",
@@ -99,9 +99,9 @@
           "歌词" : {
             "boxShadow" : {
               "y" : "3",
-              "radius" : "3",
+              "color" : "rgba(0,0,0,0)",
               "x" : "0",
-              "color" : "rgba(0,0,0,0)"
+              "radius" : "3"
             },
             "frame" : {
               "y" : "0",
@@ -113,58 +113,26 @@
             "backgroundColor" : "rgba(255,255,255,0)",
             "showWhenPlaying" : "NO",
             "children" : {
-              "歌曲名" : {
+              "歌曲名2" : {
                 "borderColor" : "rgba(255,255,255,1)",
                 "textStyle" : "none",
+                "animationSpeed" : "10",
                 "textAlignment" : "NSTextAlignmentLeft",
                 "frame" : {
-                  "y" : "41",
+                  "y" : "22",
                   "x" : "10",
                   "width" : "136",
-                  "height" : "40"
+                  "height" : "30"
                 },
                 "kerning" : "0",
                 "backgroundColor" : "rgba(255,255,255,0)",
-                "dataAttr" : "none",
                 "textColor" : "rgba(255,255,255,1.0)",
-                "type" : "UILabel",
-                "fontColorAttr" : "none",
-                "numberOfLines" : "1",
-                "data" : "[musicArtist]",
-                "borderWidth" : "0",
-                "gradientImage" : "none",
-                "fontSizeAttr" : "none",
-                "fontSize" : "14",
-                "fontName" : "Yikes_medium.otf",
-                "textShadow" : {
-                  "y" : "3",
-                  "radius" : "3",
-                  "x" : "0",
-                  "color" : "rgba(0,0,0,0)"
-                },
-                "fontNameAttr" : "none"
-              },
-              "歌手" : {
-                "borderColor" : "rgba(255,255,255,1)",
-                "textStyle" : "none",
-                "textAlignment" : "NSTextAlignmentLeft",
-                "frame" : {
-                  "y" : "17",
-                  "x" : "10",
-                  "width" : "136",
-                  "height" : "40"
-                },
-                "kerning" : "0",
-                "backgroundColor" : "rgba(255,255,255,0)",
-                "dataAttr" : "none",
-                "textColor" : "rgba(255,255,255,1.0)",
-                "type" : "UILabel",
-                "fontColorAttr" : "none",
+                "type" : "MarqueeLabel",
+                "fadeEdgesAmount" : "20",
                 "numberOfLines" : "1",
                 "data" : "[musicTitle]",
                 "borderWidth" : "0",
                 "gradientImage" : "none",
-                "fontSizeAttr" : "none",
                 "fontSize" : "14",
                 "fontName" : "Yikes_medium.otf",
                 "textShadow" : {
@@ -173,13 +141,43 @@
                   "x" : "0",
                   "color" : "rgba(0,0,0,0)"
                 },
-                "fontNameAttr" : "none"
+                "animationDelay" : "0"
+              },
+              "歌手2" : {
+                "borderColor" : "rgba(255,255,255,1)",
+                "textStyle" : "none",
+                "animationSpeed" : "10",
+                "textAlignment" : "NSTextAlignmentLeft",
+                "frame" : {
+                  "y" : "46",
+                  "x" : "10",
+                  "width" : "136",
+                  "height" : "30"
+                },
+                "kerning" : "0",
+                "backgroundColor" : "rgba(255,255,255,0)",
+                "textColor" : "rgba(255,255,255,1.0)",
+                "type" : "MarqueeLabel",
+                "fadeEdgesAmount" : "20",
+                "numberOfLines" : "1",
+                "data" : "[musicArtist]",
+                "borderWidth" : "0",
+                "gradientImage" : "none",
+                "fontSize" : "14",
+                "fontName" : "Yikes_medium.otf",
+                "textShadow" : {
+                  "y" : "3",
+                  "radius" : "3",
+                  "x" : "0",
+                  "color" : "rgba(0,0,0,0)"
+                },
+                "animationDelay" : "0"
               }
             },
             "blurAlpha" : "0",
             "cornerRadius" : "5",
             "type" : "UIView",
-            "childorder" : "歌曲名,歌手",
+            "childorder" : "歌手2,歌曲名2",
             "rotate" : "0",
             "blurIntensity" : "10",
             "alpha" : "1",
@@ -216,9 +214,9 @@
             "fontName" : "Yikes_medium.otf",
             "textShadow" : {
               "y" : "3",
-              "radius" : "3",
+              "color" : "rgba(0,0,0,0)",
               "x" : "0",
-              "color" : "rgba(0,0,0,0)"
+              "radius" : "3"
             },
             "fontNameAttr" : "none"
           },
@@ -279,9 +277,9 @@
         "fontName" : "Yikes_medium.otf",
         "textShadow" : {
           "y" : "3",
-          "radius" : "3",
+          "color" : "rgba(0,0,0,0)",
           "x" : "0",
-          "color" : "rgba(0,0,0,0)"
+          "radius" : "3"
         },
         "fontNameAttr" : "Yikes_medium.otf"
       },
@@ -310,9 +308,9 @@
         "fontName" : "Yikes_medium.otf",
         "textShadow" : {
           "y" : "3",
-          "radius" : "3",
+          "color" : "rgba(0,0,0,0)",
           "x" : "0",
-          "color" : "rgba(0,0,0,0)"
+          "radius" : "3"
         },
         "fontNameAttr" : "none"
       },
