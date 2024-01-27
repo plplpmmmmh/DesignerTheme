@@ -2,10 +2,10 @@
   "PresetView" : {
     "frame" : {
       "y" : "0",
-      "height" : "screen_height",
       "userInteractionEnabled" : "NO",
       "x" : "0",
-      "width" : "screen_width"
+      "width" : "screen_width",
+      "height" : "screen_height"
     },
     "order" : [
       "模糊背景整体",
@@ -41,18 +41,18 @@
         "fontName" : "whitney-semibold.otf",
         "textShadow" : {
           "y" : "3",
-          "color" : "rgba(0,0,0,0)",
+          "radius" : "3",
           "x" : "0",
-          "radius" : "3"
+          "color" : "rgba(0,0,0,0)"
         },
         "fontNameAttr" : "none"
       },
       "模糊背景整体" : {
         "boxShadow" : {
           "y" : "3",
-          "color" : "rgba(0,0,0,0)",
+          "radius" : "3",
           "x" : "0",
-          "radius" : "3"
+          "color" : "rgba(0,0,0,0)"
         },
         "frame" : {
           "y" : "center",
@@ -67,9 +67,9 @@
           "模糊整体2" : {
             "boxShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
             "frame" : {
               "y" : "0",
@@ -84,8 +84,8 @@
               "专辑模糊_1" : {
                 "pauseImage" : "none",
                 "frame" : {
-                  "y" : "0",
-                  "x" : "0",
+                  "y" : "center",
+                  "x" : "center",
                   "width" : "900",
                   "height" : "900"
                 },
@@ -99,7 +99,7 @@
                 "imageFolder" : "none"
               },
               "模糊_1" : {
-                "userInteraction" : "YES",
+                "cornerRadius" : "5",
                 "borderColor" : "rgba(255,255,255,0)",
                 "scale" : "0",
                 "rotate" : "0",
@@ -121,13 +121,13 @@
                 "showWhenPlaying" : "NO",
                 "boxShadow" : {
                   "y" : "3",
-                  "radius" : "3",
+                  "color" : "rgba(0,0,0,0)",
                   "x" : "0",
-                  "color" : "rgba(0,0,0,0)"
+                  "radius" : "3"
                 },
                 "childorder" : "none",
-                "cornerRadius" : "5",
-                "blurColor" : "dark2"
+                "blurColor" : "dark2",
+                "userInteraction" : "YES"
               }
             },
             "blurAlpha" : "0",
@@ -164,9 +164,9 @@
       "专辑框架" : {
         "boxShadow" : {
           "y" : "3",
-          "color" : "rgba(0,0,0,0)",
+          "radius" : "3",
           "x" : "0",
-          "radius" : "3"
+          "color" : "rgba(0,0,0,0)"
         },
         "frame" : {
           "y" : "225",
@@ -181,9 +181,9 @@
           "专辑封面中" : {
             "boxShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
             "frame" : {
               "y" : "0",
@@ -255,9 +255,9 @@
       "音乐框架" : {
         "boxShadow" : {
           "y" : "3",
-          "color" : "rgba(0,0,0,0)",
+          "radius" : "3",
           "x" : "0",
-          "radius" : "3"
+          "color" : "rgba(0,0,0,0)"
         },
         "frame" : {
           "y" : "581",
@@ -270,7 +270,7 @@
         "showWhenPlaying" : "YES",
         "children" : {
           "上一首按钮" : {
-            "blurColor" : "dark",
+            "userInteraction" : "YES",
             "borderColor" : "rgba(255,255,255,0)",
             "scale" : "0",
             "rotate" : "0",
@@ -292,13 +292,13 @@
             "showWhenPlaying" : "NO",
             "boxShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
-            "childorder" : "none",
             "cornerRadius" : "5",
-            "userInteraction" : "YES"
+            "childorder" : "none",
+            "blurColor" : "dark"
           },
           "起始时间" : {
             "borderColor" : "rgba(255,255,255,1)",
@@ -325,9 +325,9 @@
             "fontName" : "HelveticaNeue-Bold",
             "textShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
             "fontNameAttr" : "none"
           },
@@ -343,11 +343,11 @@
             "contentMode" : "scaleAspectFit",
             "animation" : {
               "歌词上UI" : "{alpha:1,speed:0.4,toggle:no,scale:1,transition:easeinout,wait:0.3,}",
-              "音乐标题" : "{x:-50,alpha:0,speed:0.4,wait:0.1,toggle:no,scale:0.8,transition:easeinout,}",
+              "音乐标题" : "{x:-50,alpha:0,speed:0.4,wait:0.1,toggle:no,scale:0.4,transition:easeinout,}",
               "专辑框架" : "{alpha:1,speed:0.4,wait:0.3,toggle:no,scale:1,transition:easeinout,}",
               "模糊背景整体" : "{alpha:1,speed:0.4,wait:0.3,toggle:no,scale:1,transition:easeinout,}",
-              "框架封面" : "{x:-60,speed:0.3,toggle:no,scale:0.8,wait:0,transition:easeinout,alpha:0,}",
-              "音乐家" : "{x:-50,speed:0.4,alpha:0,wait:0.2,toggle:no,scale:0.8,transition:easeinout,}",
+              "框架封面" : "{x:-10,speed:0.3,toggle:no,scale:0.4,wait:0,transition:easeinout,alpha:0,}",
+              "音乐家" : "{x:-50,speed:0.4,alpha:0,wait:0.2,toggle:no,scale:0.4,transition:easeinout,}",
               "歌词下UI" : "{alpha:1,speed:0.4,toggle:no,scale:1,transition:easeinout,wait:0.3,}"
             },
             "cornerRadius" : "14",
@@ -380,9 +380,9 @@
             "fontName" : "PingFangHK-Semibold",
             "textShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
             "animationDelay" : "0"
           },
@@ -400,7 +400,7 @@
             "radius" : "3"
           },
           "下一首按钮" : {
-            "blurColor" : "dark",
+            "userInteraction" : "YES",
             "borderColor" : "rgba(255,255,255,0)",
             "scale" : "0",
             "rotate" : "0",
@@ -422,21 +422,21 @@
             "showWhenPlaying" : "NO",
             "boxShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
-            "childorder" : "none",
             "cornerRadius" : "5",
-            "userInteraction" : "YES"
+            "childorder" : "none",
+            "blurColor" : "dark"
           },
           "上一首" : {
             "pauseImage" : "none",
             "frame" : {
-              "y" : "101",
+              "y" : "103",
               "x" : "100",
-              "width" : "34",
-              "height" : "27"
+              "width" : "24",
+              "height" : "24"
             },
             "isAlbumArt" : "0",
             "contentMode" : "scaleAspectFit",
@@ -471,18 +471,18 @@
             "fontName" : "PingFangHK-Semibold",
             "textShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
             "animationDelay" : "0"
           },
           "歌词下UI" : {
             "boxShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
             "frame" : {
               "y" : "30",
@@ -519,9 +519,9 @@
                 "fontName" : "PingFangHK-Semibold",
                 "textShadow" : {
                   "y" : "3",
-                  "color" : "rgba(0,0,0,0)",
+                  "radius" : "3",
                   "x" : "0",
-                  "radius" : "3"
+                  "color" : "rgba(0,0,0,0)"
                 },
                 "animationDelay" : "0"
               }
@@ -544,9 +544,9 @@
           "歌词上UI" : {
             "boxShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
             "frame" : {
               "y" : "7",
@@ -583,9 +583,9 @@
                 "fontName" : "PingFangHK-Semibold",
                 "textShadow" : {
                   "y" : "3",
-                  "color" : "rgba(0,0,0,0)",
+                  "radius" : "3",
                   "x" : "0",
-                  "radius" : "3"
+                  "color" : "rgba(0,0,0,0)"
                 },
                 "animationDelay" : "0"
               }
@@ -608,10 +608,10 @@
           "播放" : {
             "pauseImage" : "pause.png",
             "frame" : {
-              "y" : "99",
+              "y" : "103",
               "x" : "center",
-              "width" : "30",
-              "height" : "30"
+              "width" : "26",
+              "height" : "26"
             },
             "isAlbumArt" : "0",
             "contentMode" : "scaleAspectFit",
@@ -623,7 +623,7 @@
             "imageFolder" : "none"
           },
           "播放按钮" : {
-            "blurColor" : "dark",
+            "userInteraction" : "YES",
             "borderColor" : "rgba(255,255,255,0)",
             "scale" : "0",
             "rotate" : "0",
@@ -645,21 +645,21 @@
             "showWhenPlaying" : "NO",
             "boxShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
-            "childorder" : "none",
             "cornerRadius" : "5",
-            "userInteraction" : "YES"
+            "childorder" : "none",
+            "blurColor" : "dark"
           },
           "下一首" : {
             "pauseImage" : "none",
             "frame" : {
-              "y" : "101",
+              "y" : "103",
               "x" : "240",
-              "width" : "27",
-              "height" : "27"
+              "width" : "24",
+              "height" : "24"
             },
             "isAlbumArt" : "0",
             "contentMode" : "scaleAspectFit",
@@ -695,9 +695,9 @@
             "fontName" : "HelveticaNeue-Bold",
             "textShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
             "fontNameAttr" : "none"
           }
@@ -734,7 +734,7 @@
         "type" : "UILabel",
         "fontColorAttr" : "none",
         "numberOfLines" : "1",
-        "data" : "[shortdayplustwo] [date][shortmonth] [temperature]°",
+        "data" : "[shortdayplustwo] [date] [shortmonth] [temperature]°",
         "borderWidth" : "0",
         "gradientImage" : "none",
         "fontSizeAttr" : "none",
@@ -742,9 +742,9 @@
         "fontName" : "whitney-medium.otf",
         "textShadow" : {
           "y" : "3",
-          "color" : "rgba(0,0,0,0)",
+          "radius" : "3",
           "x" : "0",
-          "radius" : "3"
+          "color" : "rgba(0,0,0,0)"
         },
         "fontNameAttr" : "none"
       }
