@@ -8,7 +8,7 @@ for f in */*; do
 	for i in $f/*; do
 		N=$(basename $i)
 		#$N = items in theme folder
-		if [[ $(basename $f).gif == $N ]] #if ThemeName.gif = ThemeName.gif
+		if [[ $(basename $f).jpg == $N ]] #if ThemeName.jpg = ThemeName.jpg
 		then
 			DOWNLOADS+=($N) #add images
 			STRING=$STRING"\"img\":\"$N\"," #image
