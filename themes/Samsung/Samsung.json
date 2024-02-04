@@ -3,10 +3,10 @@
     "type" : "UIView",
     "frame" : {
       "y" : "0",
+      "x" : "0",
       "width" : "screen_width",
       "height" : "screen_height",
-      "userInteractionEnabled" : "NO",
-      "x" : "0"
+      "userInteractionEnabled" : "NO"
     },
     "children" : {
       "分" : {
@@ -32,9 +32,9 @@
         "fontName" : "lcd.otf",
         "textShadow" : {
           "y" : 3,
-          "radius" : 3,
+          "color" : "rgba(0,0,0,0)",
           "x" : 0,
-          "color" : "rgba(0,0,0,0)"
+          "radius" : 3
         },
         "cornerRadius" : 0,
         "fontNameAttr" : "none"
@@ -42,9 +42,9 @@
       "da" : {
         "boxShadow" : {
           "y" : "3",
-          "radius" : "3",
+          "color" : "rgba(0,0,0,0)",
           "x" : "0",
-          "color" : "rgba(0,0,0,0)"
+          "radius" : "3"
         },
         "frame" : {
           "y" : "151",
@@ -74,7 +74,7 @@
             "type" : "UILabel",
             "fontColorAttr" : "none",
             "numberOfLines" : "1",
-            "data" : "[day] , [date] [shortmonth] [year]",
+            "data" : "[day] . [date] [shortmonth] [year]",
             "borderWidth" : "0",
             "gradientImage" : "none",
             "fontSizeAttr" : "none",
@@ -82,9 +82,9 @@
             "fontName" : "lcd.otf",
             "textShadow" : {
               "y" : "3",
-              "radius" : "3",
+              "color" : "rgba(0,0,0,0)",
               "x" : "0",
-              "color" : "rgba(0,0,0,0)"
+              "radius" : "3"
             },
             "fontNameAttr" : "none"
           }
@@ -127,9 +127,9 @@
         "fontName" : "lcd.otf",
         "textShadow" : {
           "y" : 3,
-          "radius" : 3,
+          "color" : "rgba(0,0,0,0)",
           "x" : 0,
-          "color" : "rgba(0,0,0,0)"
+          "radius" : 3
         },
         "cornerRadius" : 0,
         "fontNameAttr" : "none"
