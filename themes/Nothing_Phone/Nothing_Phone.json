@@ -1,0 +1,196 @@
+{
+  "PresetView" : {
+    "type" : "UIView",
+    "frame" : {
+      "y" : "0",
+      "userInteractionEnabled" : "NO",
+      "x" : "0",
+      "width" : "screen_width",
+      "height" : "screen_height"
+    },
+    "children" : {
+      "dot2" : {
+        "borderColor" : "rgba(255,255,255,1.0)",
+        "textAlignment" : "NSTextAlignmentLeft",
+        "frame" : {
+          "y" : "236",
+          "x" : "math(screen_width\/2)",
+          "width" : "math(screen_width\/2-20)",
+          "height" : "135"
+        },
+        "backgroundColor" : "rgba(255,255,255,0)",
+        "kerning" : "0",
+        "dataAttr" : "none",
+        "textColor" : "rgba(255,255,255,0.6)",
+        "type" : "UILabel",
+        "numberOfLines" : "1",
+        "data" : "•",
+        "borderWidth" : 0,
+        "gradientImage" : "none",
+        "fontSizeAttr" : "none",
+        "fontSize" : "110",
+        "fontName" : "lcd.otf",
+        "textShadow" : {
+          "y" : 3,
+          "radius" : 3,
+          "x" : 0,
+          "color" : "rgba(0,0,0,0)"
+        },
+        "cornerRadius" : 0,
+        "fontNameAttr" : "none"
+      },
+      "dot" : {
+        "borderColor" : "rgba(255,255,255,1.0)",
+        "textAlignment" : "NSTextAlignmentRight",
+        "frame" : {
+          "y" : "236",
+          "x" : "0",
+          "width" : "math(screen_width\/2-16)",
+          "height" : "135"
+        },
+        "backgroundColor" : "rgba(255,255,255,0)",
+        "kerning" : "0",
+        "dataAttr" : "none",
+        "textColor" : "rgba(255,255,255,0.6)",
+        "type" : "UILabel",
+        "numberOfLines" : "1",
+        "data" : "•",
+        "borderWidth" : 0,
+        "gradientImage" : "none",
+        "fontSizeAttr" : "none",
+        "fontSize" : "110",
+        "fontName" : "lcd.otf",
+        "textShadow" : {
+          "y" : 3,
+          "radius" : 3,
+          "x" : 0,
+          "color" : "rgba(0,0,0,0)"
+        },
+        "cornerRadius" : 0,
+        "fontNameAttr" : "none"
+      },
+      "分" : {
+        "borderColor" : "rgba(255,255,255,1.0)",
+        "textAlignment" : "NSTextAlignmentCenter",
+        "frame" : {
+          "y" : "280",
+          "x" : "center",
+          "width" : "math(screen_width\/2-30)",
+          "height" : "135"
+        },
+        "backgroundColor" : "rgba(255,255,255,0)",
+        "kerning" : 4,
+        "dataAttr" : "none",
+        "textColor" : "rgba(255,255,255,0.6)",
+        "type" : "UILabel",
+        "numberOfLines" : "1",
+        "data" : "[minute]",
+        "borderWidth" : "",
+        "gradientImage" : "none",
+        "fontSizeAttr" : "none",
+        "fontSize" : "110",
+        "fontName" : "lcd.otf",
+        "textShadow" : {
+          "y" : 3,
+          "radius" : 3,
+          "x" : 0,
+          "color" : "rgba(0,0,0,0)"
+        },
+        "cornerRadius" : 0,
+        "fontNameAttr" : "none"
+      },
+      "weather" : {
+        "borderColor" : "rgba(255,255,255,1)",
+        "textStyle" : "uppercase",
+        "textAlignment" : "NSTextAlignmentLeft",
+        "frame" : {
+          "y" : "71",
+          "x" : "26",
+          "width" : "150",
+          "height" : "65"
+        },
+        "kerning" : "0",
+        "backgroundColor" : "rgba(255,255,255,0)",
+        "dataAttr" : "none",
+        "textColor" : "rgba(255,255,255,1.0)",
+        "type" : "UILabel",
+        "fontColorAttr" : "none",
+        "numberOfLines" : "1",
+        "data" : "[temperature] [condition]",
+        "borderWidth" : "0",
+        "gradientImage" : "none",
+        "fontSizeAttr" : "none",
+        "fontSize" : "22",
+        "fontName" : "lcd.otf",
+        "textShadow" : {
+          "y" : "3",
+          "radius" : "3",
+          "x" : "0",
+          "color" : "rgba(0,0,0,0)"
+        },
+        "fontNameAttr" : "none"
+      },
+      "time_label" : {
+        "borderColor" : "rgba(255,255,255,1.0)",
+        "textAlignment" : "NSTextAlignmentCenter",
+        "frame" : {
+          "y" : "197",
+          "x" : "center",
+          "width" : "math(screen_width\/2-30)",
+          "height" : "135"
+        },
+        "backgroundColor" : "rgba(255,255,255,0)",
+        "kerning" : 4,
+        "dataAttr" : "none",
+        "textColor" : "rgba(255,255,255,0.6)",
+        "type" : "UILabel",
+        "numberOfLines" : "1",
+        "data" : "[paddedhour]",
+        "borderWidth" : 0,
+        "gradientImage" : "none",
+        "fontSizeAttr" : "none",
+        "fontSize" : "110",
+        "fontName" : "lcd.otf",
+        "textShadow" : {
+          "y" : 3,
+          "radius" : 3,
+          "x" : 0,
+          "color" : "rgba(0,0,0,0)"
+        },
+        "cornerRadius" : 0,
+        "fontNameAttr" : "none"
+      },
+      "date" : {
+        "borderColor" : "rgba(255,255,255,1)",
+        "textStyle" : "uppercase",
+        "textAlignment" : "NSTextAlignmentLeft",
+        "frame" : {
+          "y" : "46",
+          "x" : "26",
+          "width" : "150",
+          "height" : "65"
+        },
+        "kerning" : "0",
+        "backgroundColor" : "rgba(255,255,255,0)",
+        "dataAttr" : "none",
+        "textColor" : "rgba(255,255,255,1.0)",
+        "type" : "UILabel",
+        "fontColorAttr" : "none",
+        "numberOfLines" : "1",
+        "data" : "[shortday]. [dateordinal] [shortmonth]",
+        "borderWidth" : "0",
+        "gradientImage" : "none",
+        "fontSizeAttr" : "none",
+        "fontSize" : "22",
+        "fontName" : "lcd.otf",
+        "textShadow" : {
+          "y" : "3",
+          "radius" : "3",
+          "x" : "0",
+          "color" : "rgba(0,0,0,0)"
+        },
+        "fontNameAttr" : "none"
+      }
+    }
+  }
+}
