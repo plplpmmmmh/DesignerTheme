@@ -12,10 +12,52 @@
       "1",
       "时间",
       "动作关闭",
-      "2"
+      "2",
+      "按下动作"
     ],
     "type" : "UIView",
     "children" : {
+      "按下动作" : {
+        "boxShadow" : {
+          "y" : "3",
+          "radius" : "3",
+          "x" : "0",
+          "color" : "rgba(0,0,0,0)"
+        },
+        "frame" : {
+          "y" : "center",
+          "x" : "center",
+          "width" : "screen_width",
+          "height" : "screen_height"
+        },
+        "hideWhenPlaying" : "NO",
+        "borderWidth" : "0",
+        "backgroundColor" : "rgba(255,255,255,0)",
+        "showWhenPlaying" : "NO",
+        "children" : {
+
+        },
+        "blurAlpha" : "0",
+        "cornerRadius" : "5",
+        "type" : "UIView",
+        "childorder" : "none",
+        "rotate" : "0",
+        "blurIntensity" : "10",
+        "alpha" : "0.3",
+        "scale" : "0",
+        "gradientImage" : "none",
+        "borderColor" : "rgba(255,255,255,0)",
+        "userInteraction" : "YES",
+        "actions" : "animation",
+        "animation" : {
+          "时间" : "{ alpha:1,speed:0.3,toggle:no,transition:easeinout,wait:0.2,}",
+          "da" : "{ alpha:0.35,speed:0.3,toggle:no,transition:easeinout,wait:0.2,rotate:-90,}",
+          "1" : "{ alpha:0,speed:0.3,toggle:no,transition:easeinout,}",
+          "2" : "{ alpha:0,speed:0.3,toggle:no,transition:easeinout,}",
+          "动作关闭" : "{ wait:5,toggle:no,trigger:动作关闭,}"
+        },
+        "blurColor" : "dark"
+      },
       "时间" : {
         "boxShadow" : {
           "y" : "3",
