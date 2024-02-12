@@ -2,13 +2,12 @@
   "PresetView" : {
     "frame" : {
       "y" : "0",
+      "userInteractionEnabled" : "NO",
       "x" : "0",
       "width" : "screen_width",
-      "height" : "screen_height",
-      "userInteractionEnabled" : "NO"
+      "height" : "screen_height"
     },
     "order" : [
-      "模糊背景整体",
       "Music",
       "weather",
       "时间",
@@ -19,9 +18,9 @@
       "Music" : {
         "boxShadow" : {
           "y" : "3",
-          "radius" : "3",
+          "color" : "rgba(0,0,0,0)",
           "x" : "0",
-          "color" : "rgba(0,0,0,0)"
+          "radius" : "3"
         },
         "frame" : {
           "y" : "287",
@@ -36,9 +35,9 @@
           "歌词" : {
             "boxShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
             "frame" : {
               "y" : "0",
@@ -74,9 +73,9 @@
                 "fontName" : "Yikes_medium.otf",
                 "textShadow" : {
                   "y" : "3",
-                  "radius" : "3",
+                  "color" : "rgba(0,0,0,0)",
                   "x" : "0",
-                  "color" : "rgba(0,0,0,0)"
+                  "radius" : "3"
                 },
                 "animationDelay" : "0"
               },
@@ -104,9 +103,9 @@
                 "fontName" : "Yikes_medium.otf",
                 "textShadow" : {
                   "y" : "3",
-                  "radius" : "3",
+                  "color" : "rgba(0,0,0,0)",
                   "x" : "0",
-                  "color" : "rgba(0,0,0,0)"
+                  "radius" : "3"
                 },
                 "animationDelay" : "0"
               }
@@ -129,9 +128,9 @@
           "打开正在播放的应用" : {
             "boxShadow" : {
               "y" : "3",
-              "radius" : "3",
+              "color" : "rgba(0,0,0,0)",
               "x" : "0",
-              "color" : "rgba(0,0,0,0)"
+              "radius" : "3"
             },
             "frame" : {
               "y" : "center",
@@ -183,9 +182,9 @@
             "fontName" : "Yikes_medium.otf",
             "textShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
             "fontNameAttr" : "none"
           },
@@ -222,7 +221,7 @@
             "ringValue" : "musicElapsedValue"
           },
           "blur" : {
-            "userInteraction" : "YES",
+            "childorder" : "none",
             "borderColor" : "rgba(255,255,255,0)",
             "scale" : "0",
             "rotate" : "0",
@@ -244,13 +243,13 @@
             "showWhenPlaying" : "NO",
             "boxShadow" : {
               "y" : "3",
-              "color" : "rgba(0,0,0,0)",
+              "radius" : "3",
               "x" : "0",
-              "radius" : "3"
+              "color" : "rgba(0,0,0,0)"
             },
             "cornerRadius" : "11",
             "blurColor" : "dark2",
-            "childorder" : "none"
+            "userInteraction" : "YES"
           },
           "play" : {
             "pauseImage" : "Muses-pause.png",
@@ -310,9 +309,9 @@
         "fontName" : "Yikes_medium.otf",
         "textShadow" : {
           "y" : "3",
-          "color" : "rgba(0,0,0,0)",
+          "radius" : "3",
           "x" : "0",
-          "radius" : "3"
+          "color" : "rgba(0,0,0,0)"
         },
         "fontNameAttr" : "Yikes_medium.otf"
       },
@@ -341,125 +340,11 @@
         "fontName" : "Yikes_medium.otf",
         "textShadow" : {
           "y" : "3",
-          "color" : "rgba(0,0,0,0)",
+          "radius" : "3",
           "x" : "0",
-          "radius" : "3"
+          "color" : "rgba(0,0,0,0)"
         },
         "fontNameAttr" : "none"
-      },
-      "模糊背景整体" : {
-        "boxShadow" : {
-          "y" : "3",
-          "color" : "rgba(0,0,0,0)",
-          "x" : "0",
-          "radius" : "3"
-        },
-        "frame" : {
-          "y" : "center",
-          "x" : "center",
-          "width" : "screen_width",
-          "height" : "screen_height"
-        },
-        "borderWidth" : "0",
-        "backgroundColor" : "rgba(255,255,255,0)",
-        "showWhenPlaying" : "YES",
-        "children" : {
-          "模糊整体2" : {
-            "boxShadow" : {
-              "y" : "3",
-              "color" : "rgba(0,0,0,0)",
-              "x" : "0",
-              "radius" : "3"
-            },
-            "frame" : {
-              "y" : "0",
-              "x" : "0",
-              "width" : "screen_width",
-              "height" : "screen_height"
-            },
-            "borderWidth" : "0",
-            "backgroundColor" : "rgba(255,255,255,0)",
-            "showWhenPlaying" : "YES",
-            "children" : {
-              "专辑模糊_1" : {
-                "pauseImage" : "none",
-                "frame" : {
-                  "y" : "center",
-                  "x" : "center",
-                  "width" : "900",
-                  "height" : "900"
-                },
-                "isAlbumArt" : "yes",
-                "contentMode" : "scaleAspectFit",
-                "animation" : "none",
-                "cornerRadius" : "0",
-                "imageURL" : "",
-                "type" : "UIImageView",
-                "actions" : "none",
-                "imageFolder" : "none"
-              },
-              "模糊_1" : {
-                "userInteraction" : "YES",
-                "borderColor" : "rgba(255,255,255,0)",
-                "scale" : "0",
-                "rotate" : "0",
-                "actions" : "none",
-                "frame" : {
-                  "y" : "0",
-                  "x" : "0",
-                  "width" : "screen_width",
-                  "height" : "screen_height"
-                },
-                "backgroundColor" : "rgba(255,255,255,0.3)",
-                "blurAlpha" : "1",
-                "type" : "UIView",
-                "animation" : "none",
-                "gradientImage" : "none",
-                "borderWidth" : "0",
-                "blurIntensity" : "50",
-                "alpha" : "1",
-                "showWhenPlaying" : "NO",
-                "childorder" : "none",
-                "boxShadow" : {
-                  "y" : "3",
-                  "radius" : "3",
-                  "x" : "0",
-                  "color" : "rgba(0,0,0,0)"
-                },
-                "cornerRadius" : "5",
-                "blurColor" : "dark2"
-              }
-            },
-            "blurAlpha" : "0",
-            "cornerRadius" : "5",
-            "type" : "UIView",
-            "childorder" : "模糊_1,专辑模糊_1",
-            "rotate" : "0",
-            "blurIntensity" : "0",
-            "alpha" : "0",
-            "scale" : "0",
-            "gradientImage" : "none",
-            "borderColor" : "rgba(255,255,255,0)",
-            "userInteraction" : "YES",
-            "actions" : "none",
-            "animation" : "none",
-            "blurColor" : "dark2"
-          }
-        },
-        "blurAlpha" : "0",
-        "cornerRadius" : "5",
-        "type" : "UIView",
-        "childorder" : "模糊整体2",
-        "rotate" : "0",
-        "blurIntensity" : "0",
-        "alpha" : "0",
-        "scale" : "0",
-        "gradientImage" : "none",
-        "borderColor" : "rgba(255,255,255,0)",
-        "userInteraction" : "YES",
-        "actions" : "none",
-        "animation" : "none",
-        "blurColor" : "dark2"
       },
       "weather" : {
         "frame" : {
