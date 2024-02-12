@@ -2,10 +2,10 @@
   "PresetView" : {
     "frame" : {
       "y" : "0",
-      "height" : "screen_height",
-      "userInteractionEnabled" : "NO",
       "x" : "0",
-      "width" : "screen_width"
+      "width" : "screen_width",
+      "height" : "screen_height",
+      "userInteractionEnabled" : "NO"
     },
     "order" : [
       "blurbg",
@@ -22,7 +22,8 @@
       "旋转123",
       "旋转停",
       "内透明",
-      "内透明2"
+      "内透明2",
+      "blur"
     ],
     "type" : "UIView",
     "children" : {
@@ -53,13 +54,13 @@
         "alpha" : "1",
         "scale" : "0",
         "gradientImage" : "none",
+        "actions" : "animation",
         "cutWithView" : "none",
         "userInteraction" : "YES",
         "borderColor" : "rgba(255,255,255,0)",
         "animation" : {
           "内222" : "{alpha:0,speed:0.4,wait:0,toggle:no,}"
-        },
-        "actions" : "animation"
+        }
       },
       "AppAct1" : {
         "boxShadow" : {
@@ -139,6 +140,72 @@
         "borderWidth" : "0",
         "alpha" : "1",
         "children" : {
+          "playyy" : {
+            "boxShadow" : {
+              "y" : "3",
+              "radius" : "3",
+              "x" : "0",
+              "color" : "rgba(0,0,0,0)"
+            },
+            "animation" : "none",
+            "frame" : {
+              "y" : "0",
+              "x" : "123",
+              "width" : "80",
+              "height" : "51"
+            },
+            "showWhenCharging" : "NO",
+            "borderWidth" : "0",
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "showWhenPlaying" : "NO",
+            "blurAlpha" : "0",
+            "cornerRadius" : "5",
+            "type" : "UIView",
+            "childorder" : "none",
+            "rotate" : "0",
+            "blurIntensity" : "10",
+            "alpha" : "1",
+            "scale" : "0",
+            "gradientImage" : "none",
+            "cutWithView" : "none",
+            "borderColor" : "rgba(255,255,255,0)",
+            "actions" : "playMusic",
+            "userInteraction" : "YES",
+            "blurColor" : "dark"
+          },
+          "资源库" : {
+            "boxShadow" : {
+              "y" : "3",
+              "radius" : "3",
+              "x" : "0",
+              "color" : "rgba(0,0,0,0)"
+            },
+            "blurColor" : "dark",
+            "frame" : {
+              "y" : "0",
+              "x" : "0",
+              "width" : "122",
+              "height" : "51"
+            },
+            "showWhenCharging" : "NO",
+            "borderWidth" : "0",
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "showWhenPlaying" : "NO",
+            "blurAlpha" : "0",
+            "cornerRadius" : "5",
+            "type" : "UIView",
+            "childorder" : "none",
+            "rotate" : "0",
+            "blurIntensity" : "10",
+            "alpha" : "1",
+            "scale" : "0",
+            "gradientImage" : "none",
+            "cutWithView" : "none",
+            "borderColor" : "rgba(255,255,255,0)",
+            "animation" : "none",
+            "actions" : "openAppLibrary",
+            "userInteraction" : "YES"
+          },
           "Welcome_1" : {
             "scale" : "0",
             "borderColor" : "rgba(255,255,255,0)",
@@ -299,74 +366,6 @@
             "cornerRadius" : "20",
             "blurColor" : "dark",
             "childorder" : "Wel_1,Wel2"
-          },
-          "playyy" : {
-            "boxShadow" : {
-              "y" : "3",
-              "radius" : "3",
-              "x" : "0",
-              "color" : "rgba(0,0,0,0)"
-            },
-            "cutWithView" : "none",
-            "frame" : {
-              "y" : "0",
-              "x" : "123",
-              "width" : "80",
-              "height" : "51"
-            },
-            "showWhenCharging" : "NO",
-            "borderWidth" : "0",
-            "backgroundColor" : "rgba(255,255,255,0)",
-            "showWhenPlaying" : "NO",
-            "blurAlpha" : "0",
-            "cornerRadius" : "5",
-            "type" : "UIView",
-            "childorder" : "none",
-            "rotate" : "0",
-            "blurIntensity" : "10",
-            "alpha" : "1",
-            "scale" : "0",
-            "gradientImage" : "none",
-            "borderColor" : "rgba(255,255,255,0)",
-            "actions" : "playMusic",
-            "userInteraction" : "YES",
-            "animation" : "none",
-            "blurColor" : "dark"
-          },
-          "blur" : {
-            "boxShadow" : {
-              "y" : "3",
-              "radius" : "3",
-              "x" : "0",
-              "color" : "rgba(0,0,0,0)"
-            },
-            "cutWithView" : "none",
-            "frame" : {
-              "y" : "0",
-              "x" : "0",
-              "width" : "122",
-              "height" : "51"
-            },
-            "showWhenCharging" : "NO",
-            "borderWidth" : "0",
-            "backgroundColor" : "rgba(255,255,255,0)",
-            "showWhenPlaying" : "NO",
-            "blurAlpha" : "0",
-            "cornerRadius" : "5",
-            "type" : "UIView",
-            "childorder" : "none",
-            "rotate" : "0",
-            "blurIntensity" : "10",
-            "alpha" : "1",
-            "scale" : "0",
-            "gradientImage" : "none",
-            "borderColor" : "rgba(255,255,255,0)",
-            "actions" : "animation",
-            "userInteraction" : "YES",
-            "animation" : {
-              "blurbg" : "{ alpha:0,speed:1,toggle:yes,}"
-            },
-            "blurColor" : "dark"
           }
         },
         "boxShadow" : {
@@ -377,7 +376,7 @@
         },
         "cornerRadius" : "0",
         "blurColor" : "dark",
-        "childorder" : "blur,playyy,Welcome_1"
+        "childorder" : "资源库,playyy,Welcome_1"
       },
       "DateEtcBox" : {
         "scale" : "0",
@@ -832,7 +831,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -845,7 +844,7 @@
                 "bundleID" : "com.apple.mobileslideshow",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -886,7 +885,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -899,7 +898,7 @@
                 "bundleID" : "com.xiaomi.mihome",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -940,7 +939,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -953,7 +952,7 @@
                 "bundleID" : "com.wazrx.dsp",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -994,7 +993,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1007,7 +1006,7 @@
                 "bundleID" : "com.hammerandchisel.discord",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1048,7 +1047,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1061,7 +1060,7 @@
                 "bundleID" : "com.apple.MobileSMS",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1102,7 +1101,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1115,7 +1114,7 @@
                 "bundleID" : "com.synology.kailash",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1156,7 +1155,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1169,7 +1168,7 @@
                 "bundleID" : "com.autonavi.amap",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1210,7 +1209,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1223,7 +1222,7 @@
                 "bundleID" : "app.swiftgram.ios",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1264,7 +1263,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1277,7 +1276,7 @@
                 "bundleID" : "com.apple.Preferences",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1318,7 +1317,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1331,7 +1330,7 @@
                 "bundleID" : "com.ss.iphone.ugc.Aweme",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1372,7 +1371,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1385,7 +1384,7 @@
                 "bundleID" : "com.google.ios.youtube",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1426,7 +1425,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1439,7 +1438,7 @@
                 "bundleID" : "com.atebits.Tweetie2",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1480,7 +1479,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1493,7 +1492,7 @@
                 "bundleID" : "com.apple.Home",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1534,7 +1533,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1547,7 +1546,7 @@
                 "bundleID" : "com.gemd.iting",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1588,7 +1587,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1601,7 +1600,7 @@
                 "bundleID" : "com.soda.music",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1642,7 +1641,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1655,7 +1654,7 @@
                 "bundleID" : "org.coolstar.SileoStore",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1696,7 +1695,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1709,7 +1708,7 @@
                 "bundleID" : "com.apple.mobilephone",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1750,7 +1749,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1763,7 +1762,7 @@
                 "bundleID" : "com.alicloud.smartdrive",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1804,7 +1803,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1817,7 +1816,7 @@
                 "bundleID" : "com.tencent.xin",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1858,7 +1857,7 @@
                 "badgeImageY" : "2",
                 "badgeImageScale" : "0.7",
                 "scale" : "0",
-                "badgeImageX" : "-1",
+                "labelColor" : "rgba(255,255,255,0)",
                 "frame" : {
                   "y" : "0",
                   "x" : "0",
@@ -1871,7 +1870,7 @@
                 "bundleID" : "ws.hbang.Terminal",
                 "alpha" : "1",
                 "badgeTextColor" : "rgba(255,255,255,0)",
-                "labelColor" : "rgba(255,255,255,0)",
+                "badgeImageX" : "-1",
                 "badgeImage" : "Ely.png"
               }
             },
@@ -1908,7 +1907,7 @@
           "x" : "0",
           "color" : "rgba(0,0,0,0)"
         },
-        "blurColor" : "dark",
+        "actions" : "animation",
         "frame" : {
           "y" : "1000",
           "x" : "center",
@@ -1929,12 +1928,12 @@
         "scale" : "0",
         "gradientImage" : "none",
         "cutWithView" : "none",
+        "userInteraction" : "YES",
         "borderColor" : "rgba(255,255,255,0)",
         "animation" : {
-          "内222" : "{alpha:1,speed:0.4,wait:0,toggle:no,}"
+          "内222" : "{alpha:0.3,speed:0.4,wait:0,toggle:no,}"
         },
-        "actions" : "animation",
-        "userInteraction" : "YES"
+        "blurColor" : "dark"
       },
       "AppAct3" : {
         "boxShadow" : {
@@ -1999,7 +1998,7 @@
           "x" : "0",
           "color" : "rgba(0,0,0,0)"
         },
-        "userInteraction" : "YES",
+        "actions" : "animation",
         "frame" : {
           "y" : "1000",
           "x" : "center",
@@ -2020,10 +2019,45 @@
         "scale" : "0",
         "gradientImage" : "none",
         "cutWithView" : "none",
+        "userInteraction" : "YES",
         "borderColor" : "rgba(255,255,255,0)",
         "animation" : "",
-        "actions" : "animation",
         "blurColor" : "dark"
+      },
+      "blur" : {
+        "boxShadow" : {
+          "y" : "3",
+          "radius" : "3",
+          "x" : "0",
+          "color" : "rgba(0,0,0,0)"
+        },
+        "blurColor" : "dark",
+        "frame" : {
+          "y" : "1000",
+          "x" : "center",
+          "width" : "122",
+          "height" : "51"
+        },
+        "showWhenCharging" : "NO",
+        "borderWidth" : "0",
+        "backgroundColor" : "rgba(255,255,255,0)",
+        "showWhenPlaying" : "NO",
+        "blurAlpha" : "0",
+        "cornerRadius" : "5",
+        "type" : "UIView",
+        "childorder" : "none",
+        "rotate" : "0",
+        "blurIntensity" : "10",
+        "alpha" : "1",
+        "scale" : "0",
+        "gradientImage" : "none",
+        "cutWithView" : "none",
+        "borderColor" : "rgba(255,255,255,0)",
+        "animation" : {
+          "blurbg" : "{ alpha:0,speed:1,toggle:yes,}"
+        },
+        "actions" : "animation",
+        "userInteraction" : "YES"
       },
       "AppAct2" : {
         "boxShadow" : {
@@ -2106,12 +2140,12 @@
         "scale" : "0",
         "gradientImage" : "none",
         "cutWithView" : "none",
+        "userInteraction" : "YES",
         "borderColor" : "rgba(255,255,255,0)",
         "animation" : {
           "内222" : "{ } { spin:YES,spinSpeed:20,toggle:no,}"
         },
-        "actions" : "animation",
-        "userInteraction" : "YES"
+        "actions" : "animation"
       },
       "blurbg" : {
         "boxShadow" : {
@@ -2144,49 +2178,6 @@
         "actions" : "none",
         "animation" : "none",
         "blurColor" : "dark2"
-      },
-      "按钮2" : {
-        "scale" : "0",
-        "borderColor" : "rgba(255,255,255,0)",
-        "rotate" : "0",
-        "actions" : "animation",
-        "frame" : {
-          "y" : "1000",
-          "x" : "center",
-          "width" : "100",
-          "height" : "60"
-        },
-        "backgroundColor" : "rgba(153, 7, 71, 0)",
-        "blurAlpha" : "0",
-        "type" : "UIView",
-        "animation" : {
-          "内222" : "",
-          "Button" : "{y:1000,speed:0.1,toggle:no,}",
-          "test" : "{transition:easeinout,speed:0.2,toggle:no,alpha:0,scale:1.1}",
-          "内透明2" : "{wait:0,trigger:内透明2,toggle:no,}",
-          "MusicBox" : "",
-          "按钮2" : "{y:1000,speed:0.1,toggle:no,}",
-          "MusicImage" : "",
-          "旋转停" : "{trigger:旋转停,toggle:no,}",
-          "blurbg" : "{ alpha:0,speed:2,toggle:no,}",
-          "DateEtcBox" : "{transition:easeinout,speed:0.6,toggle:no,alpha:1,scale:1,}",
-          "模糊22" : ""
-        },
-        "gradientImage" : "none",
-        "borderWidth" : "0",
-        "alpha" : "1",
-        "children" : {
-
-        },
-        "boxShadow" : {
-          "y" : "-87",
-          "radius" : "3",
-          "x" : "0",
-          "color" : "rgba(0,0,0,0)"
-        },
-        "cornerRadius" : "0",
-        "blurColor" : "dark",
-        "childorder" : ""
       },
       "test" : {
         "boxShadow" : {
@@ -2653,6 +2644,49 @@
         "actions" : "none",
         "animation" : "none",
         "blurColor" : "dark2"
+      },
+      "按钮2" : {
+        "scale" : "0",
+        "borderColor" : "rgba(255,255,255,0)",
+        "rotate" : "0",
+        "actions" : "animation",
+        "frame" : {
+          "y" : "1000",
+          "x" : "center",
+          "width" : "100",
+          "height" : "60"
+        },
+        "backgroundColor" : "rgba(153, 7, 71, 0)",
+        "blurAlpha" : "0",
+        "type" : "UIView",
+        "animation" : {
+          "内222" : "",
+          "Button" : "{y:1000,speed:0.1,toggle:no,}",
+          "test" : "{transition:easeinout,speed:0.2,toggle:no,alpha:0,scale:1.1}",
+          "内透明2" : "{wait:0,trigger:内透明2,toggle:no,}",
+          "MusicBox" : "",
+          "按钮2" : "{y:1000,speed:0.1,toggle:no,}",
+          "MusicImage" : "",
+          "旋转停" : "{trigger:旋转停,toggle:no,}",
+          "blurbg" : "{ alpha:0,speed:2,toggle:no,}",
+          "DateEtcBox" : "{transition:easeinout,speed:0.6,toggle:no,alpha:1,scale:1,}",
+          "模糊22" : ""
+        },
+        "gradientImage" : "none",
+        "borderWidth" : "0",
+        "alpha" : "1",
+        "children" : {
+
+        },
+        "boxShadow" : {
+          "y" : "-87",
+          "radius" : "3",
+          "x" : "0",
+          "color" : "rgba(0,0,0,0)"
+        },
+        "cornerRadius" : "0",
+        "blurColor" : "dark",
+        "childorder" : ""
       },
       "AppAct4" : {
         "boxShadow" : {
