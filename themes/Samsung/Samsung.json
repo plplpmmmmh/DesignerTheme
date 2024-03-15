@@ -3,17 +3,17 @@
     "type" : "UIView",
     "frame" : {
       "y" : "0",
-      "x" : "0",
-      "width" : "screen_width",
       "height" : "screen_height",
-      "userInteractionEnabled" : "NO"
+      "userInteractionEnabled" : "NO",
+      "x" : "0",
+      "width" : "screen_width"
     },
     "children" : {
       "分" : {
         "borderColor" : "rgba(255,255,255,1.0)",
         "textAlignment" : "NSTextAlignmentLeft",
         "frame" : {
-          "y" : "169",
+          "y" : "175",
           "x" : "25",
           "width" : "math(screen_width\/2-30)",
           "height" : "135"
@@ -42,7 +42,7 @@
       "da" : {
         "boxShadow" : {
           "y" : "3",
-          "color" : "rgba(0,0,0,0)",
+          "color" : "rgba(255, 255, 255, 0.00)",
           "x" : "0",
           "radius" : "3"
         },
@@ -78,7 +78,7 @@
             "borderWidth" : "0",
             "gradientImage" : "none",
             "fontSizeAttr" : "none",
-            "fontSize" : "25",
+            "fontSize" : "22",
             "fontName" : "lcd.otf",
             "textShadow" : {
               "y" : "3",
@@ -108,7 +108,7 @@
         "borderColor" : "rgba(255,255,255,1.0)",
         "textAlignment" : "NSTextAlignmentLeft",
         "frame" : {
-          "y" : "62",
+          "y" : "61",
           "x" : "25",
           "width" : "math(screen_width\/2-30)",
           "height" : "135"

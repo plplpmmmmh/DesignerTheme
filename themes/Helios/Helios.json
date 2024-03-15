@@ -3,29 +3,12 @@
     "type" : "UIView",
     "frame" : {
       "y" : "0",
+      "height" : "screen_height",
       "userInteractionEnabled" : "NO",
       "x" : "0",
-      "width" : "screen_width",
-      "height" : "screen_height"
+      "width" : "screen_width"
     },
     "children" : {
-      "bat" : {
-        "pauseImage" : "none",
-        "frame" : {
-          "y" : "166",
-          "x" : "16",
-          "width" : "40",
-          "height" : "40"
-        },
-        "isAlbumArt" : "0",
-        "contentMode" : "scaleAspectFit",
-        "animation" : "none",
-        "cornerRadius" : "0",
-        "imageURL" : "lightyellow.png",
-        "type" : "UIImageView",
-        "actions" : "none",
-        "imageFolder" : "none"
-      },
       "%" : {
         "borderColor" : "rgba(255,255,255,1)",
         "textStyle" : "none",
@@ -51,18 +34,35 @@
         "fontName" : "Quicksand-Bold.otf",
         "textShadow" : {
           "y" : "3",
-          "radius" : "3",
+          "color" : "rgba(0,0,0,0)",
           "x" : "0",
-          "color" : "rgba(0,0,0,0)"
+          "radius" : "3"
         },
         "fontNameAttr" : "none"
       },
+      "bat" : {
+        "pauseImage" : "none",
+        "frame" : {
+          "y" : "166",
+          "x" : "16",
+          "width" : "40",
+          "height" : "40"
+        },
+        "isAlbumArt" : "0",
+        "contentMode" : "scaleAspectFit",
+        "animation" : "none",
+        "cornerRadius" : "0",
+        "imageURL" : "lightyellow.png",
+        "type" : "UIImageView",
+        "actions" : "none",
+        "imageFolder" : "none"
+      },
       "time_label" : {
         "borderColor" : "rgba(255,255,255,1.0)",
-        "textAlignment" : "NSTextAlignmentCenter",
+        "textAlignment" : "NSTextAlignmentLeft",
         "frame" : {
           "y" : "96",
-          "x" : "-81",
+          "x" : "26",
           "width" : "300",
           "height" : "80"
         },
@@ -80,9 +80,9 @@
         "fontName" : "Quicksand-Bold.otf",
         "textShadow" : {
           "y" : 3,
-          "radius" : 3,
+          "color" : "rgba(0,0,0,0)",
           "x" : 0,
-          "color" : "rgba(0,0,0,0)"
+          "radius" : 3
         },
         "cornerRadius" : 0,
         "fontNameAttr" : "none"
@@ -90,10 +90,10 @@
       "date" : {
         "borderColor" : "rgba(255,255,255,1)",
         "textStyle" : "none",
-        "textAlignment" : "NSTextAlignmentCenter",
+        "textAlignment" : "NSTextAlignmentLeft",
         "frame" : {
           "y" : "140",
-          "x" : "-11",
+          "x" : "27",
           "width" : "150",
           "height" : "40"
         },
@@ -112,9 +112,9 @@
         "fontName" : "Quicksand-Bold.otf",
         "textShadow" : {
           "y" : "3",
-          "radius" : "3",
+          "color" : "rgba(0,0,0,0)",
           "x" : "0",
-          "color" : "rgba(0,0,0,0)"
+          "radius" : "3"
         },
         "fontNameAttr" : "none"
       }
